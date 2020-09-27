@@ -7,8 +7,8 @@ on:
   pull_request:
     branches:
       - master
-#   schedule:
-#     - cron: "0 * * * *"
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
 
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 8bf56353bcb3a8e798b55b546b9619cf
+          GIST_ID: 9d5d9c52ce3c2a6d10142e1ff34c74cc
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
           STEAM_ID: ${{ secrets.STEAM_ID }}
     steps:
